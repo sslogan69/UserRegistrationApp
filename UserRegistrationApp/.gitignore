@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/UserRegistrationApp/backend/node_modules
+/UserRegistrationApp/bin/Debug/net8.0
+/UserRegistrationApp/frontend/node_modules
+/UserRegistrationApp/obj
+/UserRegistrationApp.Tests/bin/Debug/net9.0
+/UserRegistrationApp.Tests/obj/Debug/net9.0
+/UserRegistrationApp.Tests/obj

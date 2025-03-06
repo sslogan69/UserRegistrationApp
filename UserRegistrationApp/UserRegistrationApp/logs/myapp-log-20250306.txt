@@ -1,0 +1,980 @@
+2025-03-06 11:52:39.387 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-06 11:52:39.711 -05:00 [DBG] Calling CoreWCF.Channels.MetadataTransportServiceBuilder.Configure
+2025-03-06 11:52:39.738 -05:00 [DBG] Calling CoreWCF.Channels.HttpTransportServiceBuilder.Configure
+2025-03-06 11:52:39.739 -05:00 [DBG] Adding ServiceModelHttpMiddleware to app builder
+2025-03-06 11:52:39.740 -05:00 [DBG] Hosting starting
+2025-03-06 11:52:39.875 -05:00 [INF] User profile is available. Using 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 11:52:39.897 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-1f95fd43-99af-4953-b0a6-f9431ae8f532.xml'.
+2025-03-06 11:52:39.920 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-7d6a9efd-2099-4e05-84fa-b1e134078204.xml'.
+2025-03-06 11:52:39.928 -05:00 [DBG] Found key {1f95fd43-99af-4953-b0a6-f9431ae8f532}.
+2025-03-06 11:52:39.949 -05:00 [DBG] Found key {7d6a9efd-2099-4e05-84fa-b1e134078204}.
+2025-03-06 11:52:39.956 -05:00 [DBG] Considering key {7d6a9efd-2099-4e05-84fa-b1e134078204} with expiration date 2025-03-16 03:36:45Z as default key.
+2025-03-06 11:52:39.959 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 11:52:39.963 -05:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-06 11:52:39.964 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 11:52:39.975 -05:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-06 11:52:39.976 -05:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-06 11:52:39.979 -05:00 [DBG] Using key {7d6a9efd-2099-4e05-84fa-b1e134078204} as the default key.
+2025-03-06 11:52:39.979 -05:00 [DBG] Key ring with default key {7d6a9efd-2099-4e05-84fa-b1e134078204} was loaded during application startup.
+2025-03-06 11:52:40.802 -05:00 [DBG] Building branch map
+2025-03-06 11:52:41.226 -05:00 [INF] Mapping CoreWCF branch app for path /UserService
+2025-03-06 11:52:41.263 -05:00 [DBG] Building branch map
+2025-03-06 11:52:41.265 -05:00 [INF] Configuring metadata to /UserService
+2025-03-06 11:52:41.266 -05:00 [INF] Now listening on: https://localhost:7043
+2025-03-06 11:52:41.266 -05:00 [INF] Now listening on: http://localhost:7000
+2025-03-06 11:52:41.266 -05:00 [DBG] Loaded hosting startup assembly UserRegistrationApp
+2025-03-06 11:52:41.266 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-06 11:52:41.266 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-06 11:52:41.266 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-06 11:52:41.408 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-06 11:52:41.408 -05:00 [INF] Hosting environment: Development
+2025-03-06 11:52:41.408 -05:00 [INF] Content root path: E:\GitHubProjects\Github-Projects\UserRegistrationApp\UserRegistrationApp
+2025-03-06 11:52:41.409 -05:00 [DBG] Hosting started
+2025-03-06 11:53:15.350 -05:00 [DBG] Connection id "0HNASPTHNN195" received FIN.
+2025-03-06 11:53:15.359 -05:00 [DBG] Connection id "0HNASPTHNN195" accepted.
+2025-03-06 11:53:15.362 -05:00 [DBG] Connection id "0HNASPTHNN195" started.
+2025-03-06 11:53:15.400 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-06 11:53:15.498 -05:00 [DBG] Connection id "0HNASPTHNN195" stopped.
+2025-03-06 11:53:15.505 -05:00 [DBG] Connection id "0HNASPTHNN195" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 11:54:10.532 -05:00 [DBG] Connection id "0HNASPTHNN196" accepted.
+2025-03-06 11:54:10.532 -05:00 [DBG] Connection id "0HNASPTHNN196" started.
+2025-03-06 11:54:11.512 -05:00 [DBG] Connection 0HNASPTHNN196 established using the following protocol: "Tls13"
+2025-03-06 11:54:11.727 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2025-03-06 11:54:12.065 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-06 11:54:12.134 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-03-06 11:54:12.134 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 11:54:12.253 -05:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-03-06 11:54:12.255 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-03-06 11:54:12.268 -05:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-03-06 11:54:12.269 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-03-06 11:54:12.277 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 569.3439ms
+2025-03-06 11:54:12.451 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-06 11:54:12.462 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.js - null null
+2025-03-06 11:54:12.468 -05:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-03-06 11:54:12.481 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 11:54:12.492 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.js - 200 null application/javascript;charset=utf-8 36.2495ms
+2025-03-06 11:54:12.508 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 56.5771ms
+2025-03-06 11:54:12.567 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2025-03-06 11:54:13.478 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 910.5982ms
+2025-03-06 11:54:13.999 -05:00 [DBG] Connection id "0HNASPTHNN196" received FIN.
+2025-03-06 11:54:14.004 -05:00 [DBG] Connection id "0HNASPTHNN196" is closed. The last processed stream ID was 7.
+2025-03-06 11:54:14.004 -05:00 [DBG] Connection id "0HNASPTHNN196" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 11:54:14.017 -05:00 [DBG] The connection queue processing loop for 0HNASPTHNN196 completed.
+2025-03-06 11:54:14.019 -05:00 [DBG] Connection id "0HNASPTHNN196" stopped.
+2025-03-06 11:54:15.659 -05:00 [DBG] Connection id "0HNASPTHNN197" accepted.
+2025-03-06 11:54:15.674 -05:00 [DBG] Connection id "0HNASPTHNN197" started.
+2025-03-06 11:54:15.725 -05:00 [DBG] Connection 0HNASPTHNN197 established using the following protocol: "Tls13"
+2025-03-06 11:54:15.806 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2025-03-06 11:54:15.807 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-06 11:54:15.807 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 11:54:16.018 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.4982ms
+2025-03-06 11:54:24.010 -05:00 [DBG] Connection id "0HNASPTHNN197" received FIN.
+2025-03-06 11:54:24.013 -05:00 [DBG] Connection id "0HNASPTHNN197" is closed. The last processed stream ID was 1.
+2025-03-06 11:54:24.013 -05:00 [DBG] Connection id "0HNASPTHNN197" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 11:54:24.013 -05:00 [DBG] The connection queue processing loop for 0HNASPTHNN197 completed.
+2025-03-06 11:54:24.014 -05:00 [DBG] Connection id "0HNASPTHNN197" stopped.
+2025-03-06 11:56:11.442 -05:00 [DBG] Connection id "0HNASPTHNN198" accepted.
+2025-03-06 11:56:11.443 -05:00 [DBG] Connection id "0HNASPTHNN198" started.
+2025-03-06 11:56:11.494 -05:00 [DBG] Connection 0HNASPTHNN198 established using the following protocol: "Tls13"
+2025-03-06 11:56:11.497 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/api/User/2 - null null
+2025-03-06 11:56:11.552 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User/2'
+2025-03-06 11:56:11.567 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)' with route pattern 'api/User/{userId}' is valid for the request path '/api/User/2'
+2025-03-06 11:56:11.570 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)'
+2025-03-06 11:56:11.584 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 11:56:11.654 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 11:56:11.695 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)'
+2025-03-06 11:56:11.861 -05:00 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 11:56:11.865 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 11:56:11.866 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 11:56:11.867 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 11:56:11.868 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 11:56:11.868 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 11:56:11.874 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 11:56:12.483 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-03-06 11:56:12.548 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 11:56:12.580 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' ...
+2025-03-06 11:56:12.587 -05:00 [DBG] Attempting to bind parameter 'userId' of type 'System.String' using the name 'userId' in request data ...
+2025-03-06 11:56:12.589 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-03-06 11:56:12.590 -05:00 [DBG] Done attempting to bind parameter 'userId' of type 'System.String'.
+2025-03-06 11:56:12.590 -05:00 [DBG] Attempting to validate the bound parameter 'userId' of type 'System.String' ...
+2025-03-06 11:56:12.604 -05:00 [DBG] Done attempting to validate the bound parameter 'userId' of type 'System.String'.
+2025-03-06 11:56:12.612 -05:00 [INF] Getting user with ID 2
+2025-03-06 11:56:12.613 -05:00 [INF] Getting user with ID 2
+2025-03-06 11:56:13.785 -05:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-03-06 11:56:13.786 -05:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-03-06 11:56:14.426 -05:00 [DBG] Entity Framework Core 9.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0' with options: EngineType=SqlServer 
+2025-03-06 11:56:14.734 -05:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(e => EF.Property<int>(e, "UserId") == __p_0)'
+2025-03-06 11:56:15.497 -05:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<User>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.CreatedDate (DateTime) Required, 1], [Property: User.Email (string) Required, 2], [Property: User.PasswordHash (string) Required, 3], [Property: User.UserName (string) Required, 4] }
+            SELECT TOP(1) u.UserId, u.CreatedDate, u.Email, u.PasswordHash, u.UserName
+            FROM Users AS u
+            WHERE u.UserId == @__p_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.UserId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.CreatedDate (DateTime) Required, 1], [Property: User.Email (string) Required, 2], [Property: User.PasswordHash (string) Required, 3], [Property: User.UserName (string) Required, 4] }
+            SELECT TOP(1) u.UserId, u.CreatedDate, u.Email, u.PasswordHash, u.UserName
+            FROM Users AS u
+            WHERE u.UserId == @__p_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            User entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                User instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(User);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: User.UserId PK | Resolver: c => c.Dependencies.Model.FindEntityType("UserRegistrationApp.DbContext.User").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (User)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("UserRegistrationApp.DbContext.User")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("UserRegistrationApp.DbContext.User")]: 
+                            {
+                                return 
+                                {
+                                    User instance;
+                                    instance = new User();
+                                    instance.<UserId>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<Email>k__BackingField = dataReader.GetString(2);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(3);
+                                    instance.<UserName>k__BackingField = dataReader.GetString(4);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("UserRegistrationApp.DbContext.User")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(User)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: UserRegistrationApp.DbContext.ApplicationDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-03-06 11:56:15.601 -05:00 [DBG] Creating DbConnection.
+2025-03-06 11:56:15.671 -05:00 [DBG] Created DbConnection. (65ms).
+2025-03-06 11:56:15.680 -05:00 [DBG] Opening connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 11:56:17.720 -05:00 [DBG] Opened connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 11:56:17.729 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-03-06 11:56:17.738 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (8ms).
+2025-03-06 11:56:17.754 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (26ms).
+2025-03-06 11:56:17.768 -05:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[PasswordHash], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-03-06 11:56:17.881 -05:00 [INF] Executed DbCommand (111ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[PasswordHash], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__p_0
+2025-03-06 11:56:17.962 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-06 11:56:18.017 -05:00 [DBG] Closing data reader to 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 11:56:18.030 -05:00 [DBG] A data reader for 'UserRegistrationDb' on server '(localdb)\mssqllocaldb' is being disposed after spending 138ms reading results.
+2025-03-06 11:56:18.033 -05:00 [DBG] Closing connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 11:56:18.040 -05:00 [DBG] Closed connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb' (6ms).
+2025-03-06 11:56:18.041 -05:00 [INF] User with ID 2 found
+2025-03-06 11:56:18.053 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-03-06 11:56:18.061 -05:00 [DBG] No information found on request to perform content negotiation.
+2025-03-06 11:56:18.061 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-03-06 11:56:18.062 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-03-06 11:56:18.063 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-03-06 11:56:18.063 -05:00 [INF] Executing OkObjectResult, writing value of type 'UserRegistrationApp.Models.ApiResponse`1[[UserRegistrationApp.Dtos.UserDto, UserRegistrationApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-06 11:56:18.096 -05:00 [INF] Executed action UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp) in 6220.4137ms
+2025-03-06 11:56:18.097 -05:00 [INF] Executed endpoint 'UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)'
+2025-03-06 11:56:18.109 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2025-03-06 11:56:18.117 -05:00 [DBG] Disposing connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 11:56:18.119 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-03-06 11:56:18.119 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/api/User/2 - 200 null application/json; charset=utf-8 6622.8562ms
+2025-03-06 12:24:08.412 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-06 12:24:08.693 -05:00 [DBG] Calling CoreWCF.Channels.MetadataTransportServiceBuilder.Configure
+2025-03-06 12:24:08.706 -05:00 [DBG] Calling CoreWCF.Channels.HttpTransportServiceBuilder.Configure
+2025-03-06 12:24:08.706 -05:00 [DBG] Adding ServiceModelHttpMiddleware to app builder
+2025-03-06 12:24:08.708 -05:00 [DBG] Hosting starting
+2025-03-06 12:24:08.761 -05:00 [INF] User profile is available. Using 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 12:24:08.775 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-1f95fd43-99af-4953-b0a6-f9431ae8f532.xml'.
+2025-03-06 12:24:08.793 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-7d6a9efd-2099-4e05-84fa-b1e134078204.xml'.
+2025-03-06 12:24:08.799 -05:00 [DBG] Found key {1f95fd43-99af-4953-b0a6-f9431ae8f532}.
+2025-03-06 12:24:08.804 -05:00 [DBG] Found key {7d6a9efd-2099-4e05-84fa-b1e134078204}.
+2025-03-06 12:24:08.809 -05:00 [DBG] Considering key {7d6a9efd-2099-4e05-84fa-b1e134078204} with expiration date 2025-03-16 03:36:45Z as default key.
+2025-03-06 12:24:08.812 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 12:24:08.813 -05:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-06 12:24:08.815 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 12:24:08.819 -05:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-06 12:24:08.820 -05:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-06 12:24:08.821 -05:00 [DBG] Using key {7d6a9efd-2099-4e05-84fa-b1e134078204} as the default key.
+2025-03-06 12:24:08.822 -05:00 [DBG] Key ring with default key {7d6a9efd-2099-4e05-84fa-b1e134078204} was loaded during application startup.
+2025-03-06 12:24:09.716 -05:00 [DBG] Building branch map
+2025-03-06 12:24:09.947 -05:00 [INF] Mapping CoreWCF branch app for path /UserService
+2025-03-06 12:24:09.969 -05:00 [DBG] Building branch map
+2025-03-06 12:24:09.970 -05:00 [INF] Configuring metadata to /UserService
+2025-03-06 12:24:09.971 -05:00 [INF] Now listening on: https://localhost:7043
+2025-03-06 12:24:09.971 -05:00 [INF] Now listening on: http://localhost:7000
+2025-03-06 12:24:09.971 -05:00 [DBG] Loaded hosting startup assembly UserRegistrationApp
+2025-03-06 12:24:09.971 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-06 12:24:09.971 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-06 12:24:09.971 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-06 12:24:10.086 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-06 12:24:10.086 -05:00 [INF] Hosting environment: Development
+2025-03-06 12:24:10.086 -05:00 [INF] Content root path: E:\GitHubProjects\Github-Projects\UserRegistrationApp\UserRegistrationApp
+2025-03-06 12:24:10.086 -05:00 [DBG] Hosting started
+2025-03-06 12:25:31.267 -05:00 [DBG] Connection id "0HNASQFILUJHU" received FIN.
+2025-03-06 12:25:31.319 -05:00 [DBG] Connection id "0HNASQFILUJHU" accepted.
+2025-03-06 12:25:31.323 -05:00 [DBG] Connection id "0HNASQFILUJHU" started.
+2025-03-06 12:25:31.475 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-06 12:25:31.586 -05:00 [DBG] Connection id "0HNASQFILUJHU" stopped.
+2025-03-06 12:25:31.593 -05:00 [DBG] Connection id "0HNASQFILUJHU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:26:44.213 -05:00 [DBG] Connection id "0HNASQFILUJHV" accepted.
+2025-03-06 12:26:44.214 -05:00 [DBG] Connection id "0HNASQFILUJHV" started.
+2025-03-06 12:26:44.939 -05:00 [DBG] Connection 0HNASQFILUJHV established using the following protocol: "Tls13"
+2025-03-06 12:26:45.184 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2025-03-06 12:26:45.531 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-06 12:26:45.621 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-03-06 12:26:45.621 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:26:45.749 -05:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-03-06 12:26:45.750 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-03-06 12:26:45.760 -05:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-03-06 12:26:45.761 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-03-06 12:26:45.765 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 607.8167ms
+2025-03-06 12:26:45.889 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-06 12:26:45.896 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.js - null null
+2025-03-06 12:26:45.899 -05:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-03-06 12:26:45.899 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:26:45.915 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.js - 200 null application/javascript;charset=utf-8 19.4218ms
+2025-03-06 12:26:45.948 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 58.4665ms
+2025-03-06 12:26:45.982 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2025-03-06 12:26:46.229 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 246.9029ms
+2025-03-06 12:26:48.283 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2025-03-06 12:26:48.285 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-06 12:26:48.285 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:26:48.461 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 177.6901ms
+2025-03-06 12:26:49.905 -05:00 [DBG] Connection id "0HNASQFILUJHV" received FIN.
+2025-03-06 12:26:49.918 -05:00 [DBG] The connection queue processing loop for 0HNASQFILUJHV completed.
+2025-03-06 12:26:49.921 -05:00 [DBG] Connection id "0HNASQFILUJHV" is closed. The last processed stream ID was 9.
+2025-03-06 12:26:49.921 -05:00 [DBG] Connection id "0HNASQFILUJHV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:26:49.923 -05:00 [DBG] Connection id "0HNASQFILUJHV" stopped.
+2025-03-06 12:27:04.201 -05:00 [DBG] Connection id "0HNASQFILUJI0" accepted.
+2025-03-06 12:27:04.201 -05:00 [DBG] Connection id "0HNASQFILUJI0" started.
+2025-03-06 12:27:04.206 -05:00 [DBG] Connection 0HNASQFILUJI0 established using the following protocol: "Tls13"
+2025-03-06 12:27:04.207 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/User - null null
+2025-03-06 12:27:04.211 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:27:04.211 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-03-06 12:27:04.217 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:27:04.225 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:27:04.226 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:27:04.226 -05:00 [DBG] The request is a preflight request.
+2025-03-06 12:27:04.231 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/User - 204 null null 23.3226ms
+2025-03-06 12:27:04.234 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7043/api/User - application/json 71
+2025-03-06 12:27:04.235 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:27:04.240 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)' with route pattern 'api/User' is valid for the request path '/api/User'
+2025-03-06 12:27:04.240 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:27:04.241 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:27:04.242 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:27:04.242 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:27:04.276 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 12:27:04.301 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:27:04.383 -05:00 [INF] Route matched with {action = "InsertUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertUser(UserRegistrationApp.Dtos.UserDto) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 12:27:04.384 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 12:27:04.385 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 12:27:04.386 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 12:27:04.386 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 12:27:04.386 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 12:27:04.388 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:27:04.750 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-03-06 12:27:04.777 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:27:04.794 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:27:04.797 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' using the name '' in request data ...
+2025-03-06 12:27:04.798 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-03-06 12:27:04.816 -05:00 [DBG] Connection id "0HNASQFILUJI0", Request id "0HNASQFILUJI0:00000003": started reading request body.
+2025-03-06 12:27:04.816 -05:00 [DBG] Connection id "0HNASQFILUJI0", Request id "0HNASQFILUJI0:00000003": done reading request body.
+2025-03-06 12:27:04.834 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserRegistrationApp.Dtos.UserDto'
+2025-03-06 12:27:04.835 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:27:04.835 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:27:04.836 -05:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:27:04.854 -05:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:27:04.857 -05:00 [DBG] The request has model state errors, returning an error response.
+2025-03-06 12:27:04.860 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-03-06 12:27:04.862 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-03-06 12:27:04.863 -05:00 [DBG] No information found on request to perform content negotiation.
+2025-03-06 12:27:04.863 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-03-06 12:27:04.864 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-03-06 12:27:04.864 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-06 12:27:04.899 -05:00 [INF] Executed action UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp) in 510.9169ms
+2025-03-06 12:27:04.900 -05:00 [INF] Executed endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:27:04.901 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7043/api/User - 400 null application/problem+json; charset=utf-8 666.9117ms
+2025-03-06 12:27:09.935 -05:00 [DBG] Connection id "0HNASQFILUJI0" received FIN.
+2025-03-06 12:27:09.936 -05:00 [DBG] Connection id "0HNASQFILUJI0" is closed. The last processed stream ID was 3.
+2025-03-06 12:27:09.937 -05:00 [DBG] Connection id "0HNASQFILUJI0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:27:09.937 -05:00 [DBG] The connection queue processing loop for 0HNASQFILUJI0 completed.
+2025-03-06 12:27:09.950 -05:00 [DBG] Connection id "0HNASQFILUJI0" stopped.
+2025-03-06 12:27:16.842 -05:00 [DBG] Connection id "0HNASQFILUJI1" accepted.
+2025-03-06 12:27:16.843 -05:00 [DBG] Connection id "0HNASQFILUJI1" started.
+2025-03-06 12:27:16.853 -05:00 [DBG] Connection 0HNASQFILUJI1 established using the following protocol: "Tls13"
+2025-03-06 12:27:16.856 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/User - null null
+2025-03-06 12:27:16.856 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:27:16.857 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-03-06 12:27:16.857 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:27:16.857 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:27:16.857 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:27:16.857 -05:00 [DBG] The request is a preflight request.
+2025-03-06 12:27:16.858 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/User - 204 null null 1.6931ms
+2025-03-06 12:27:16.861 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7043/api/User - application/json 71
+2025-03-06 12:27:16.862 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:27:16.862 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)' with route pattern 'api/User' is valid for the request path '/api/User'
+2025-03-06 12:27:16.862 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:27:16.862 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:27:16.862 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:27:16.862 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:27:16.864 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 12:27:16.865 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:27:16.865 -05:00 [INF] Route matched with {action = "InsertUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertUser(UserRegistrationApp.Dtos.UserDto) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 12:27:16.865 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 12:27:16.865 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 12:27:16.866 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 12:27:16.866 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 12:27:16.866 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 12:27:16.866 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:27:16.880 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:27:16.881 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:27:16.881 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' using the name '' in request data ...
+2025-03-06 12:27:16.881 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-03-06 12:27:16.881 -05:00 [DBG] Connection id "0HNASQFILUJI1", Request id "0HNASQFILUJI1:00000003": started reading request body.
+2025-03-06 12:27:16.881 -05:00 [DBG] Connection id "0HNASQFILUJI1", Request id "0HNASQFILUJI1:00000003": done reading request body.
+2025-03-06 12:27:16.882 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserRegistrationApp.Dtos.UserDto'
+2025-03-06 12:27:16.882 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:27:16.882 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:27:16.882 -05:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:27:16.882 -05:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:27:16.882 -05:00 [DBG] The request has model state errors, returning an error response.
+2025-03-06 12:27:16.882 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-03-06 12:27:16.883 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-03-06 12:27:16.883 -05:00 [DBG] No information found on request to perform content negotiation.
+2025-03-06 12:27:16.883 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-03-06 12:27:16.883 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-03-06 12:27:16.883 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-06 12:27:16.883 -05:00 [INF] Executed action UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp) in 17.2196ms
+2025-03-06 12:27:16.883 -05:00 [INF] Executed endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:27:16.883 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7043/api/User - 400 null application/problem+json; charset=utf-8 21.976ms
+2025-03-06 12:27:19.941 -05:00 [DBG] Connection id "0HNASQFILUJI1" received FIN.
+2025-03-06 12:27:19.942 -05:00 [DBG] Connection id "0HNASQFILUJI1" is closed. The last processed stream ID was 3.
+2025-03-06 12:27:19.942 -05:00 [DBG] Connection id "0HNASQFILUJI1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:27:19.942 -05:00 [DBG] The connection queue processing loop for 0HNASQFILUJI1 completed.
+2025-03-06 12:27:19.944 -05:00 [DBG] Connection id "0HNASQFILUJI1" stopped.
+2025-03-06 12:32:32.076 -05:00 [DBG] Connection id "0HNASQFILUJI2" accepted.
+2025-03-06 12:32:32.084 -05:00 [DBG] Connection id "0HNASQFILUJI2" started.
+2025-03-06 12:32:32.204 -05:00 [DBG] Connection 0HNASQFILUJI2 established using the following protocol: "Tls13"
+2025-03-06 12:32:32.271 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/User - null null
+2025-03-06 12:32:32.280 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:32:32.281 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-03-06 12:32:32.292 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:32:32.295 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:32:32.295 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:32:32.297 -05:00 [DBG] The request is a preflight request.
+2025-03-06 12:32:32.302 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/User - 204 null null 40.3503ms
+2025-03-06 12:32:32.308 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7043/api/User - application/json 71
+2025-03-06 12:32:32.311 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:32:32.314 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)' with route pattern 'api/User' is valid for the request path '/api/User'
+2025-03-06 12:32:32.314 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:32:32.316 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:32:32.316 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:32:32.316 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:32:32.352 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 12:32:32.355 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:32:32.366 -05:00 [INF] Route matched with {action = "InsertUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertUser(UserRegistrationApp.Dtos.UserDto) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 12:32:32.369 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 12:32:32.369 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 12:32:32.371 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 12:32:32.371 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 12:32:32.371 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 12:32:32.372 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:32:32.397 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:32:32.398 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:32:32.400 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' using the name '' in request data ...
+2025-03-06 12:32:32.400 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-03-06 12:32:32.403 -05:00 [DBG] Connection id "0HNASQFILUJI2", Request id "0HNASQFILUJI2:00000003": started reading request body.
+2025-03-06 12:32:32.403 -05:00 [DBG] Connection id "0HNASQFILUJI2", Request id "0HNASQFILUJI2:00000003": done reading request body.
+2025-03-06 12:32:32.406 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserRegistrationApp.Dtos.UserDto'
+2025-03-06 12:32:32.407 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:32:32.407 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:32:32.407 -05:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:32:32.412 -05:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:32:32.413 -05:00 [DBG] The request has model state errors, returning an error response.
+2025-03-06 12:32:32.414 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-03-06 12:32:32.416 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-03-06 12:32:32.417 -05:00 [DBG] No information found on request to perform content negotiation.
+2025-03-06 12:32:32.417 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-03-06 12:32:32.418 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-03-06 12:32:32.418 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-06 12:32:32.423 -05:00 [INF] Executed action UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp) in 51.6957ms
+2025-03-06 12:32:32.423 -05:00 [INF] Executed endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:32:32.423 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7043/api/User - 400 null application/problem+json; charset=utf-8 115.6149ms
+2025-03-06 12:32:33.677 -05:00 [DBG] Connection id "0HNASQFILUJI2" received FIN.
+2025-03-06 12:32:33.680 -05:00 [DBG] Connection id "0HNASQFILUJI2" is closed. The last processed stream ID was 3.
+2025-03-06 12:32:33.680 -05:00 [DBG] Connection id "0HNASQFILUJI2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:32:33.681 -05:00 [DBG] The connection queue processing loop for 0HNASQFILUJI2 completed.
+2025-03-06 12:32:33.683 -05:00 [DBG] Connection id "0HNASQFILUJI2" stopped.
+2025-03-06 12:32:46.741 -05:00 [DBG] Connection id "0HNASQFILUJI3" accepted.
+2025-03-06 12:32:46.741 -05:00 [DBG] Connection id "0HNASQFILUJI3" started.
+2025-03-06 12:32:46.748 -05:00 [DBG] Connection 0HNASQFILUJI3 established using the following protocol: "Tls13"
+2025-03-06 12:32:46.754 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/User - null null
+2025-03-06 12:32:46.754 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:32:46.754 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-03-06 12:32:46.754 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:32:46.754 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:32:46.754 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:32:46.754 -05:00 [DBG] The request is a preflight request.
+2025-03-06 12:32:46.761 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/User - 204 null null 1.1264ms
+2025-03-06 12:32:46.761 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7043/api/User - application/json 71
+2025-03-06 12:32:46.762 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:32:46.762 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)' with route pattern 'api/User' is valid for the request path '/api/User'
+2025-03-06 12:32:46.763 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:32:46.763 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:32:46.763 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:32:46.763 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:32:46.764 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 12:32:46.764 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:32:46.765 -05:00 [INF] Route matched with {action = "InsertUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertUser(UserRegistrationApp.Dtos.UserDto) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 12:32:46.766 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 12:32:46.766 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 12:32:46.767 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 12:32:46.767 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 12:32:46.767 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 12:32:46.767 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:32:46.767 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:32:46.767 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:32:46.768 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' using the name '' in request data ...
+2025-03-06 12:32:46.768 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-03-06 12:32:46.768 -05:00 [DBG] Connection id "0HNASQFILUJI3", Request id "0HNASQFILUJI3:00000003": started reading request body.
+2025-03-06 12:32:46.768 -05:00 [DBG] Connection id "0HNASQFILUJI3", Request id "0HNASQFILUJI3:00000003": done reading request body.
+2025-03-06 12:32:46.768 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserRegistrationApp.Dtos.UserDto'
+2025-03-06 12:32:46.768 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:32:46.768 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:32:46.768 -05:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:32:46.769 -05:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:32:46.770 -05:00 [DBG] The request has model state errors, returning an error response.
+2025-03-06 12:32:46.770 -05:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-03-06 12:32:46.770 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-03-06 12:32:46.770 -05:00 [DBG] No information found on request to perform content negotiation.
+2025-03-06 12:32:46.770 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-03-06 12:32:46.770 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-03-06 12:32:46.770 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-06 12:32:46.771 -05:00 [INF] Executed action UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp) in 3.8869ms
+2025-03-06 12:32:46.771 -05:00 [INF] Executed endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:32:46.771 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7043/api/User - 400 null application/problem+json; charset=utf-8 9.4946ms
+2025-03-06 12:32:53.684 -05:00 [DBG] Connection id "0HNASQFILUJI3" received FIN.
+2025-03-06 12:32:53.684 -05:00 [DBG] Connection id "0HNASQFILUJI3" is closed. The last processed stream ID was 3.
+2025-03-06 12:32:53.685 -05:00 [DBG] Connection id "0HNASQFILUJI3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:32:53.686 -05:00 [DBG] The connection queue processing loop for 0HNASQFILUJI3 completed.
+2025-03-06 12:32:53.686 -05:00 [DBG] Connection id "0HNASQFILUJI3" stopped.
+2025-03-06 12:34:53.383 -05:00 [DBG] Connection id "0HNASQFILUJI4" accepted.
+2025-03-06 12:34:53.392 -05:00 [DBG] Connection id "0HNASQFILUJI4" started.
+2025-03-06 12:34:53.476 -05:00 [DBG] Connection 0HNASQFILUJI4 established using the following protocol: "Tls13"
+2025-03-06 12:34:53.542 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2025-03-06 12:34:53.890 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-03-06 12:34:53.890 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:34:53.925 -05:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-03-06 12:34:53.926 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-03-06 12:34:53.933 -05:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-03-06 12:34:53.933 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-03-06 12:34:53.934 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 409.0599ms
+2025-03-06 12:34:54.842 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.js - null null
+2025-03-06 12:34:54.843 -05:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-03-06 12:34:54.843 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:34:54.844 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.js - 200 null application/javascript;charset=utf-8 2.1945ms
+2025-03-06 12:34:54.886 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-06 12:34:54.897 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2025-03-06 12:34:54.898 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 12.4402ms
+2025-03-06 12:34:54.992 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.3972ms
+2025-03-06 12:34:55.972 -05:00 [DBG] Connection id "0HNASQFILUJI5" accepted.
+2025-03-06 12:34:55.974 -05:00 [DBG] Connection id "0HNASQFILUJI5" started.
+2025-03-06 12:34:55.990 -05:00 [DBG] Connection 0HNASQFILUJI5 established using the following protocol: "Tls13"
+2025-03-06 12:34:55.992 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/User - null null
+2025-03-06 12:34:55.993 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:34:55.994 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-03-06 12:34:55.997 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:34:56.000 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:34:56.000 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:34:56.000 -05:00 [DBG] The request is a preflight request.
+2025-03-06 12:34:56.003 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/User - 204 null null 10.7087ms
+2025-03-06 12:34:56.009 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7043/api/User - application/json 85
+2025-03-06 12:34:56.009 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:34:56.009 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)' with route pattern 'api/User' is valid for the request path '/api/User'
+2025-03-06 12:34:56.009 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:34:56.009 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:34:56.009 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:34:56.009 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:34:56.018 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 12:34:56.020 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:34:56.027 -05:00 [INF] Route matched with {action = "InsertUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertUser(UserRegistrationApp.Dtos.UserDto) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 12:34:56.027 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 12:34:56.027 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 12:34:56.029 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 12:34:56.032 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 12:34:56.038 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 12:34:56.042 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:34:56.072 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:34:56.075 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:34:56.077 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' using the name '' in request data ...
+2025-03-06 12:34:56.077 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-03-06 12:34:56.078 -05:00 [DBG] Connection id "0HNASQFILUJI5", Request id "0HNASQFILUJI5:00000003": started reading request body.
+2025-03-06 12:34:56.078 -05:00 [DBG] Connection id "0HNASQFILUJI5", Request id "0HNASQFILUJI5:00000003": done reading request body.
+2025-03-06 12:34:56.094 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserRegistrationApp.Dtos.UserDto'
+2025-03-06 12:34:56.094 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:34:56.094 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:34:56.094 -05:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:34:56.101 -05:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:36:30.065 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-06 12:36:30.431 -05:00 [DBG] Calling CoreWCF.Channels.MetadataTransportServiceBuilder.Configure
+2025-03-06 12:36:30.442 -05:00 [DBG] Calling CoreWCF.Channels.HttpTransportServiceBuilder.Configure
+2025-03-06 12:36:30.443 -05:00 [DBG] Adding ServiceModelHttpMiddleware to app builder
+2025-03-06 12:36:30.445 -05:00 [DBG] Hosting starting
+2025-03-06 12:36:30.510 -05:00 [INF] User profile is available. Using 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 12:36:30.524 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-1f95fd43-99af-4953-b0a6-f9431ae8f532.xml'.
+2025-03-06 12:36:30.541 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-7d6a9efd-2099-4e05-84fa-b1e134078204.xml'.
+2025-03-06 12:36:30.553 -05:00 [DBG] Found key {1f95fd43-99af-4953-b0a6-f9431ae8f532}.
+2025-03-06 12:36:30.560 -05:00 [DBG] Found key {7d6a9efd-2099-4e05-84fa-b1e134078204}.
+2025-03-06 12:36:30.567 -05:00 [DBG] Considering key {7d6a9efd-2099-4e05-84fa-b1e134078204} with expiration date 2025-03-16 03:36:45Z as default key.
+2025-03-06 12:36:30.571 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 12:36:30.573 -05:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-06 12:36:30.575 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 12:36:30.582 -05:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-06 12:36:30.584 -05:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-06 12:36:30.585 -05:00 [DBG] Using key {7d6a9efd-2099-4e05-84fa-b1e134078204} as the default key.
+2025-03-06 12:36:30.586 -05:00 [DBG] Key ring with default key {7d6a9efd-2099-4e05-84fa-b1e134078204} was loaded during application startup.
+2025-03-06 12:36:31.212 -05:00 [DBG] Building branch map
+2025-03-06 12:36:31.551 -05:00 [DBG] Connection id "0HNASQLNF0DVI" received FIN.
+2025-03-06 12:36:31.551 -05:00 [DBG] Connection id "0HNASQLNF0DVF" received FIN.
+2025-03-06 12:36:31.552 -05:00 [DBG] Connection id "0HNASQLNF0DVF" accepted.
+2025-03-06 12:36:31.552 -05:00 [DBG] Connection id "0HNASQLNF0DVH" accepted.
+2025-03-06 12:36:31.553 -05:00 [DBG] Connection id "0HNASQLNF0DVH" started.
+2025-03-06 12:36:31.553 -05:00 [DBG] Connection id "0HNASQLNF0DVF" started.
+2025-03-06 12:36:31.606 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-06 12:36:31.647 -05:00 [INF] Mapping CoreWCF branch app for path /UserService
+2025-03-06 12:36:31.602 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-06 12:36:31.731 -05:00 [DBG] Connection id "0HNASQLNF0DVH" stopped.
+2025-03-06 12:36:31.731 -05:00 [DBG] Connection id "0HNASQLNF0DVF" stopped.
+2025-03-06 12:36:31.734 -05:00 [DBG] Connection id "0HNASQLNF0DVH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:36:31.734 -05:00 [DBG] Connection id "0HNASQLNF0DVF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:36:31.742 -05:00 [DBG] Building branch map
+2025-03-06 12:36:31.744 -05:00 [INF] Configuring metadata to /UserService
+2025-03-06 12:36:31.746 -05:00 [INF] Now listening on: https://localhost:7043
+2025-03-06 12:36:31.746 -05:00 [INF] Now listening on: http://localhost:7000
+2025-03-06 12:36:31.746 -05:00 [DBG] Loaded hosting startup assembly UserRegistrationApp
+2025-03-06 12:36:31.747 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-06 12:36:31.747 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-06 12:36:31.747 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-06 12:36:32.139 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-06 12:36:32.139 -05:00 [INF] Hosting environment: Development
+2025-03-06 12:36:32.139 -05:00 [INF] Content root path: E:\GitHubProjects\Github-Projects\UserRegistrationApp\UserRegistrationApp
+2025-03-06 12:36:32.139 -05:00 [DBG] Hosting started
+2025-03-06 12:36:33.288 -05:00 [DBG] Connection id "0HNASQLNF0DVJ" accepted.
+2025-03-06 12:36:33.306 -05:00 [DBG] Connection id "0HNASQLNF0DVJ" started.
+2025-03-06 12:36:33.883 -05:00 [DBG] Connection 0HNASQLNF0DVJ established using the following protocol: "Tls13"
+2025-03-06 12:36:37.855 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2025-03-06 12:36:39.337 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-06 12:36:39.429 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-03-06 12:36:39.433 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:36:39.734 -05:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-03-06 12:36:39.735 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-03-06 12:36:39.752 -05:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-03-06 12:36:39.755 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-03-06 12:36:39.768 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 2289.6121ms
+2025-03-06 12:36:42.663 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.js - null null
+2025-03-06 12:36:42.664 -05:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-03-06 12:36:42.664 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:36:42.666 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.js - 200 null application/javascript;charset=utf-8 2.9308ms
+2025-03-06 12:36:44.848 -05:00 [DBG] Connection id "0HNASQLNF0DVJ" received FIN.
+2025-03-06 12:36:45.454 -05:00 [DBG] The connection queue processing loop for 0HNASQLNF0DVJ completed.
+2025-03-06 12:36:45.462 -05:00 [DBG] Connection id "0HNASQLNF0DVJ" is closed. The last processed stream ID was 3.
+2025-03-06 12:36:45.462 -05:00 [DBG] Connection id "0HNASQLNF0DVJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:36:45.688 -05:00 [DBG] Connection id "0HNASQLNF0DVJ" stopped.
+2025-03-06 12:36:49.620 -05:00 [DBG] Connection id "0HNASQLNF0DVK" accepted.
+2025-03-06 12:36:49.624 -05:00 [DBG] Connection id "0HNASQLNF0DVK" started.
+2025-03-06 12:36:49.666 -05:00 [DBG] Connection 0HNASQLNF0DVK established using the following protocol: "Tls13"
+2025-03-06 12:36:49.717 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-06 12:36:49.727 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2025-03-06 12:36:49.793 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 75.876ms
+2025-03-06 12:36:49.836 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 109.3826ms
+2025-03-06 12:36:53.021 -05:00 [DBG] Connection id "0HNASQLNF0DVL" accepted.
+2025-03-06 12:36:53.022 -05:00 [DBG] Connection id "0HNASQLNF0DVL" started.
+2025-03-06 12:36:53.106 -05:00 [DBG] Connection 0HNASQLNF0DVL established using the following protocol: "Tls13"
+2025-03-06 12:36:53.121 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/User - null null
+2025-03-06 12:36:53.227 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:36:53.230 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-03-06 12:36:53.306 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:36:53.324 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:36:53.325 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:36:53.353 -05:00 [DBG] The request is a preflight request.
+2025-03-06 12:36:53.368 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/User - 204 null null 246.9977ms
+2025-03-06 12:36:53.453 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7043/api/User - application/json 85
+2025-03-06 12:36:53.460 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:36:53.507 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)' with route pattern 'api/User' is valid for the request path '/api/User'
+2025-03-06 12:36:53.522 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:36:53.522 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:36:53.538 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:36:53.540 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:36:53.742 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 12:36:53.962 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:36:54.375 -05:00 [INF] Route matched with {action = "InsertUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertUser(UserRegistrationApp.Dtos.UserDto) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 12:36:54.377 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 12:36:54.377 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 12:36:54.378 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 12:36:54.383 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 12:36:54.384 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 12:36:54.393 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:36:54.726 -05:00 [DBG] Connection id "0HNASQLNF0DVK" received FIN.
+2025-03-06 12:36:54.726 -05:00 [DBG] Connection id "0HNASQLNF0DVK" is closed. The last processed stream ID was 3.
+2025-03-06 12:36:54.726 -05:00 [DBG] Connection id "0HNASQLNF0DVK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:36:54.726 -05:00 [DBG] The connection queue processing loop for 0HNASQLNF0DVK completed.
+2025-03-06 12:36:54.729 -05:00 [DBG] Connection id "0HNASQLNF0DVK" stopped.
+2025-03-06 12:37:01.439 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-03-06 12:37:01.496 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:37:01.559 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:37:01.567 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' using the name '' in request data ...
+2025-03-06 12:37:01.572 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-03-06 12:37:01.593 -05:00 [DBG] Connection id "0HNASQLNF0DVL", Request id "0HNASQLNF0DVL:00000003": started reading request body.
+2025-03-06 12:37:01.593 -05:00 [DBG] Connection id "0HNASQLNF0DVL", Request id "0HNASQLNF0DVL:00000003": done reading request body.
+2025-03-06 12:37:01.629 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserRegistrationApp.Dtos.UserDto'
+2025-03-06 12:37:01.630 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:37:01.630 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:37:01.630 -05:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:37:01.651 -05:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:37:01.656 -05:00 [INF] Inserting new user with UserName siva
+2025-03-06 12:37:01.658 -05:00 [INF] Inserting new user with UserName siva
+2025-03-06 12:37:04.235 -05:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-03-06 12:37:04.235 -05:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-03-06 12:37:07.545 -05:00 [DBG] Entity Framework Core 9.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0' with options: EngineType=SqlServer 
+2025-03-06 12:37:07.989 -05:00 [DBG] 'ApplicationDbContext' generated a temporary value for the property 'User.UserId'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-06 12:37:09.149 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-06 12:37:09.153 -05:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2025-03-06 12:37:09.155 -05:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2025-03-06 12:37:09.165 -05:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2025-03-06 12:37:14.789 -05:00 [DBG] Creating DbConnection.
+2025-03-06 12:37:14.911 -05:00 [DBG] Created DbConnection. (1047ms).
+2025-03-06 12:37:14.915 -05:00 [DBG] Opening connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:29.817 -05:00 [DBG] Opened connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:29.832 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-03-06 12:37:29.840 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2025-03-06 12:37:29.858 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (26ms).
+2025-03-06 12:37:29.873 -05:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [PasswordHash], [UserName])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-03-06 12:37:30.032 -05:00 [INF] Executed DbCommand (161ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [PasswordHash], [UserName])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-03-06 12:37:30.068 -05:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-03-06 12:37:30.087 -05:00 [DBG] Closing data reader to 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:30.103 -05:00 [DBG] A data reader for 'UserRegistrationDb' on server '(localdb)\mssqllocaldb' is being disposed after spending 58ms reading results.
+2025-03-06 12:37:30.117 -05:00 [DBG] Closing connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:30.142 -05:00 [DBG] Closed connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb' (26ms).
+2025-03-06 12:37:30.180 -05:00 [DBG] An entity of type 'User' tracked by 'ApplicationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-06 12:37:30.185 -05:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2025-03-06 12:37:30.188 -05:00 [INF] User with ID 6 inserted successfully
+2025-03-06 12:37:30.202 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-03-06 12:37:30.207 -05:00 [DBG] No information found on request to perform content negotiation.
+2025-03-06 12:37:30.207 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-03-06 12:37:30.207 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-03-06 12:37:30.209 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-03-06 12:37:30.210 -05:00 [INF] Executing CreatedAtActionResult, writing value of type 'UserRegistrationApp.Models.ApiResponse`1[[UserRegistrationApp.Dtos.UserDto, UserRegistrationApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-06 12:37:30.252 -05:00 [DBG] Found the endpoints ["UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)"] for address (userId=[6],action=[GetUser],controller=[User])
+2025-03-06 12:37:30.260 -05:00 [DBG] Successfully processed template api/User/{userId} for UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp) resulting in /api/User/6 and 
+2025-03-06 12:37:30.265 -05:00 [DBG] Link generation succeeded for endpoints ["UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)"] with result /api/User/6
+2025-03-06 12:37:30.293 -05:00 [INF] Executed action UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp) in 35902.5754ms
+2025-03-06 12:37:30.294 -05:00 [INF] Executed endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:37:30.308 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2025-03-06 12:37:30.316 -05:00 [DBG] Disposing connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:30.319 -05:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-03-06 12:37:30.321 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7043/api/User - 201 null application/json; charset=utf-8 36867.8514ms
+2025-03-06 12:37:31.087 -05:00 [DBG] Connection id "0HNASQLNF0DVL" received FIN.
+2025-03-06 12:37:31.089 -05:00 [DBG] Connection id "0HNASQLNF0DVL" is closed. The last processed stream ID was 3.
+2025-03-06 12:37:31.089 -05:00 [DBG] Connection id "0HNASQLNF0DVL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:37:31.090 -05:00 [DBG] The connection queue processing loop for 0HNASQLNF0DVL completed.
+2025-03-06 12:37:31.096 -05:00 [DBG] Connection id "0HNASQLNF0DVL" stopped.
+2025-03-06 12:37:35.417 -05:00 [DBG] Connection id "0HNASQLNF0DVM" accepted.
+2025-03-06 12:37:35.417 -05:00 [DBG] Connection id "0HNASQLNF0DVM" started.
+2025-03-06 12:37:35.457 -05:00 [DBG] Connection 0HNASQLNF0DVM established using the following protocol: "Tls13"
+2025-03-06 12:37:35.465 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2025-03-06 12:37:35.468 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-06 12:37:35.468 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 12:37:35.536 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.3218ms
+2025-03-06 12:37:36.088 -05:00 [DBG] Connection id "0HNASQLNF0DVM" received FIN.
+2025-03-06 12:37:36.088 -05:00 [DBG] Connection id "0HNASQLNF0DVM" is closed. The last processed stream ID was 1.
+2025-03-06 12:37:36.088 -05:00 [DBG] Connection id "0HNASQLNF0DVM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:37:36.089 -05:00 [DBG] The connection queue processing loop for 0HNASQLNF0DVM completed.
+2025-03-06 12:37:36.096 -05:00 [DBG] Connection id "0HNASQLNF0DVM" stopped.
+2025-03-06 12:37:51.753 -05:00 [DBG] Connection id "0HNASQLNF0DVN" accepted.
+2025-03-06 12:37:51.753 -05:00 [DBG] Connection id "0HNASQLNF0DVN" started.
+2025-03-06 12:37:51.759 -05:00 [DBG] Connection 0HNASQLNF0DVN established using the following protocol: "Tls13"
+2025-03-06 12:37:51.761 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/User - null null
+2025-03-06 12:37:51.762 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:37:51.762 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2025-03-06 12:37:51.763 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:37:51.765 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:37:51.765 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:37:51.765 -05:00 [DBG] The request is a preflight request.
+2025-03-06 12:37:51.767 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/User - 204 null null 4.8789ms
+2025-03-06 12:37:51.848 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7043/api/User - application/json 88
+2025-03-06 12:37:51.849 -05:00 [DBG] 1 candidate(s) found for the request path '/api/User'
+2025-03-06 12:37:51.849 -05:00 [DBG] Endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)' with route pattern 'api/User' is valid for the request path '/api/User'
+2025-03-06 12:37:51.850 -05:00 [DBG] Request matched endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:37:51.850 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-03-06 12:37:51.850 -05:00 [DBG] The request has an origin header: 'http://localhost:3000'.
+2025-03-06 12:37:51.850 -05:00 [INF] CORS policy execution successful.
+2025-03-06 12:37:51.859 -05:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-03-06 12:37:51.861 -05:00 [INF] Executing endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:37:51.867 -05:00 [INF] Route matched with {action = "InsertUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertUser(UserRegistrationApp.Dtos.UserDto) on controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp).
+2025-03-06 12:37:51.867 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-03-06 12:37:51.867 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-03-06 12:37:51.868 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-03-06 12:37:51.868 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-03-06 12:37:51.868 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-03-06 12:37:51.868 -05:00 [DBG] Executing controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:37:51.875 -05:00 [DBG] Executed controller factory for controller UserRegistrationApp.Controllers.UserController (UserRegistrationApp)
+2025-03-06 12:37:51.878 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:37:51.879 -05:00 [DBG] Attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' using the name '' in request data ...
+2025-03-06 12:37:51.880 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-03-06 12:37:51.881 -05:00 [DBG] Connection id "0HNASQLNF0DVN", Request id "0HNASQLNF0DVN:00000003": started reading request body.
+2025-03-06 12:37:51.881 -05:00 [DBG] Connection id "0HNASQLNF0DVN", Request id "0HNASQLNF0DVN:00000003": done reading request body.
+2025-03-06 12:37:51.884 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'UserRegistrationApp.Dtos.UserDto'
+2025-03-06 12:37:51.884 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:37:51.884 -05:00 [DBG] Done attempting to bind parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:37:51.884 -05:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto' ...
+2025-03-06 12:37:51.887 -05:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'UserRegistrationApp.Dtos.UserDto'.
+2025-03-06 12:37:51.888 -05:00 [INF] Inserting new user with UserName Testing
+2025-03-06 12:37:51.888 -05:00 [INF] Inserting new user with UserName Testing
+2025-03-06 12:37:51.985 -05:00 [DBG] Entity Framework Core 9.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.0' with options: EngineType=SqlServer 
+2025-03-06 12:37:51.987 -05:00 [DBG] 'ApplicationDbContext' generated a temporary value for the property 'User.UserId'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-06 12:37:51.988 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-06 12:37:51.988 -05:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2025-03-06 12:37:51.988 -05:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2025-03-06 12:37:51.989 -05:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2025-03-06 12:37:51.990 -05:00 [DBG] Creating DbConnection.
+2025-03-06 12:37:51.991 -05:00 [DBG] Created DbConnection. (0ms).
+2025-03-06 12:37:51.991 -05:00 [DBG] Opening connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:51.995 -05:00 [DBG] Opened connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:51.995 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-03-06 12:37:51.995 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-06 12:37:51.995 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-03-06 12:37:51.995 -05:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [PasswordHash], [UserName])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-03-06 12:37:52.008 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [PasswordHash], [UserName])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3);
+2025-03-06 12:37:52.008 -05:00 [DBG] The foreign key property 'User.UserId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-03-06 12:37:52.008 -05:00 [DBG] Closing data reader to 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:52.008 -05:00 [DBG] A data reader for 'UserRegistrationDb' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results.
+2025-03-06 12:37:52.008 -05:00 [DBG] Closing connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:52.009 -05:00 [DBG] Closed connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb' (0ms).
+2025-03-06 12:37:52.009 -05:00 [DBG] An entity of type 'User' tracked by 'ApplicationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-06 12:37:52.009 -05:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2025-03-06 12:37:52.009 -05:00 [INF] User with ID 7 inserted successfully
+2025-03-06 12:37:52.009 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-03-06 12:37:52.009 -05:00 [DBG] No information found on request to perform content negotiation.
+2025-03-06 12:37:52.009 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-03-06 12:37:52.009 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-03-06 12:37:52.010 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-03-06 12:37:52.010 -05:00 [INF] Executing CreatedAtActionResult, writing value of type 'UserRegistrationApp.Models.ApiResponse`1[[UserRegistrationApp.Dtos.UserDto, UserRegistrationApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-06 12:37:52.010 -05:00 [DBG] Found the endpoints ["UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)"] for address (userId=[7],action=[GetUser],controller=[User])
+2025-03-06 12:37:52.010 -05:00 [DBG] Successfully processed template api/User/{userId} for UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp) resulting in /api/User/7 and 
+2025-03-06 12:37:52.010 -05:00 [DBG] Link generation succeeded for endpoints ["UserRegistrationApp.Controllers.UserController.GetUser (UserRegistrationApp)"] with result /api/User/7
+2025-03-06 12:37:52.011 -05:00 [INF] Executed action UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp) in 142.7184ms
+2025-03-06 12:37:52.011 -05:00 [INF] Executed endpoint 'UserRegistrationApp.Controllers.UserController.InsertUser (UserRegistrationApp)'
+2025-03-06 12:37:52.011 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2025-03-06 12:37:52.011 -05:00 [DBG] Disposing connection to database 'UserRegistrationDb' on server '(localdb)\mssqllocaldb'.
+2025-03-06 12:37:52.011 -05:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2025-03-06 12:37:52.011 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7043/api/User - 201 null application/json; charset=utf-8 163.8668ms
+2025-03-06 12:37:56.112 -05:00 [DBG] Connection id "0HNASQLNF0DVN" received FIN.
+2025-03-06 12:37:56.113 -05:00 [DBG] Connection id "0HNASQLNF0DVN" is closed. The last processed stream ID was 3.
+2025-03-06 12:37:56.113 -05:00 [DBG] Connection id "0HNASQLNF0DVN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 12:37:56.113 -05:00 [DBG] The connection queue processing loop for 0HNASQLNF0DVN completed.
+2025-03-06 12:37:56.114 -05:00 [DBG] Connection id "0HNASQLNF0DVN" stopped.
+2025-03-06 15:33:53.982 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-06 15:33:54.278 -05:00 [DBG] Calling CoreWCF.Channels.MetadataTransportServiceBuilder.Configure
+2025-03-06 15:33:54.287 -05:00 [DBG] Calling CoreWCF.Channels.HttpTransportServiceBuilder.Configure
+2025-03-06 15:33:54.288 -05:00 [DBG] Adding ServiceModelHttpMiddleware to app builder
+2025-03-06 15:33:54.289 -05:00 [DBG] Hosting starting
+2025-03-06 15:33:54.320 -05:00 [INF] User profile is available. Using 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-06 15:33:54.329 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-1f95fd43-99af-4953-b0a6-f9431ae8f532.xml'.
+2025-03-06 15:33:54.343 -05:00 [DBG] Reading data from file 'C:\Users\logan\AppData\Local\ASP.NET\DataProtection-Keys\key-7d6a9efd-2099-4e05-84fa-b1e134078204.xml'.
+2025-03-06 15:33:54.350 -05:00 [DBG] Found key {1f95fd43-99af-4953-b0a6-f9431ae8f532}.
+2025-03-06 15:33:54.355 -05:00 [DBG] Found key {7d6a9efd-2099-4e05-84fa-b1e134078204}.
+2025-03-06 15:33:54.360 -05:00 [DBG] Considering key {7d6a9efd-2099-4e05-84fa-b1e134078204} with expiration date 2025-03-16 03:36:45Z as default key.
+2025-03-06 15:33:54.362 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 15:33:54.364 -05:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-06 15:33:54.365 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-06 15:33:54.369 -05:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-06 15:33:54.370 -05:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-06 15:33:54.372 -05:00 [DBG] Using key {7d6a9efd-2099-4e05-84fa-b1e134078204} as the default key.
+2025-03-06 15:33:54.372 -05:00 [DBG] Key ring with default key {7d6a9efd-2099-4e05-84fa-b1e134078204} was loaded during application startup.
+2025-03-06 15:33:54.611 -05:00 [DBG] Building branch map
+2025-03-06 15:33:54.781 -05:00 [INF] Mapping CoreWCF branch app for path /UserService
+2025-03-06 15:33:54.802 -05:00 [DBG] Building branch map
+2025-03-06 15:33:54.802 -05:00 [INF] Configuring metadata to /UserService
+2025-03-06 15:33:54.803 -05:00 [INF] Now listening on: https://localhost:7043
+2025-03-06 15:33:54.803 -05:00 [INF] Now listening on: http://localhost:7000
+2025-03-06 15:33:54.803 -05:00 [DBG] Loaded hosting startup assembly UserRegistrationApp
+2025-03-06 15:33:54.803 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-06 15:33:54.803 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-06 15:33:54.803 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-06 15:33:54.917 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-06 15:33:54.917 -05:00 [INF] Hosting environment: Development
+2025-03-06 15:33:54.917 -05:00 [INF] Content root path: E:\GitHubProjects\Github-Projects\UserRegistrationApp\UserRegistrationApp\UserRegistrationApp
+2025-03-06 15:33:54.917 -05:00 [DBG] Hosting started
+2025-03-06 15:33:56.136 -05:00 [DBG] Connection id "0HNASTORPM3E0" received FIN.
+2025-03-06 15:33:56.146 -05:00 [DBG] Connection id "0HNASTORPM3E0" accepted.
+2025-03-06 15:33:56.153 -05:00 [DBG] Connection id "0HNASTORPM3E0" started.
+2025-03-06 15:33:56.180 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-06 15:33:56.252 -05:00 [DBG] Connection id "0HNASTORPM3E0" stopped.
+2025-03-06 15:33:56.255 -05:00 [DBG] Connection id "0HNASTORPM3E0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 15:34:03.119 -05:00 [DBG] Connection id "0HNASTORPM3E1" accepted.
+2025-03-06 15:34:03.120 -05:00 [DBG] Connection id "0HNASTORPM3E1" started.
+2025-03-06 15:34:03.276 -05:00 [DBG] Connection id "0HNASTORPM3E2" accepted.
+2025-03-06 15:34:03.295 -05:00 [DBG] Connection id "0HNASTORPM3E2" started.
+2025-03-06 15:34:03.440 -05:00 [DBG] Connection id "0HNASTORPM3E2" received FIN.
+2025-03-06 15:34:03.473 -05:00 [DBG] Connection 0HNASTORPM3E1 established using the following protocol: "Tls13"
+2025-03-06 15:34:03.473 -05:00 [DBG] Connection 0HNASTORPM3E2 established using the following protocol: "Tls13"
+2025-03-06 15:34:03.589 -05:00 [DBG] Connection id "0HNASTORPM3E2" is closed. The last processed stream ID was 0.
+2025-03-06 15:34:03.590 -05:00 [DBG] Connection id "0HNASTORPM3E2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 15:34:03.622 -05:00 [DBG] The connection queue processing loop for 0HNASTORPM3E2 completed.
+2025-03-06 15:34:03.657 -05:00 [DBG] Connection id "0HNASTORPM3E2" stopped.
+2025-03-06 15:34:03.740 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger - null null
+2025-03-06 15:34:04.790 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-06 15:34:04.813 -05:00 [DBG] No candidates found for the request path '/swagger'
+2025-03-06 15:34:04.813 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:04.846 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger - 301 0 null 1164.6965ms
+2025-03-06 15:34:04.862 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2025-03-06 15:34:04.869 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-03-06 15:34:04.869 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:04.952 -05:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-03-06 15:34:04.954 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-03-06 15:34:04.973 -05:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-03-06 15:34:04.973 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-03-06 15:34:04.973 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 111.5376ms
+2025-03-06 15:34:05.055 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/swagger-ui.css - null null
+2025-03-06 15:34:05.056 -05:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-03-06 15:34:05.056 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:05.058 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.css - null null
+2025-03-06 15:34:05.058 -05:00 [DBG] No candidates found for the request path '/swagger/index.css'
+2025-03-06 15:34:05.058 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:05.059 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/swagger-ui-bundle.js - null null
+2025-03-06 15:34:05.059 -05:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-03-06 15:34:05.059 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:05.059 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-06 15:34:05.059 -05:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-03-06 15:34:05.059 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:05.089 -05:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-03-06 15:34:05.089 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.css - 200 202 text/css 30.5501ms
+2025-03-06 15:34:05.089 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.js - null null
+2025-03-06 15:34:05.089 -05:00 [DBG] No candidates found for the request path '/swagger/index.js'
+2025-03-06 15:34:05.089 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:05.090 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.js - 200 null application/javascript;charset=utf-8 1.221ms
+2025-03-06 15:34:05.090 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-06 15:34:05.101 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2025-03-06 15:34:05.139 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript; charset=utf-8 48.2919ms
+2025-03-06 15:34:05.162 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-06 15:34:05.163 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/swagger-ui.css - 200 152034 text/css 108.3438ms
+2025-03-06 15:34:05.171 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-06 15:34:05.171 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 111.5939ms
+2025-03-06 15:34:05.349 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 249.4016ms
+2025-03-06 15:34:05.355 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-06 15:34:05.356 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 297.0831ms
+2025-03-06 15:34:05.643 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2025-03-06 15:34:05.643 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-06 15:34:05.643 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:05.644 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/favicon-32x32.png - null null
+2025-03-06 15:34:05.645 -05:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-03-06 15:34:05.645 -05:00 [DBG] Request did not match any endpoints
+2025-03-06 15:34:05.646 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-06 15:34:05.647 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/favicon-32x32.png - 200 628 image/png 2.3304ms
+2025-03-06 15:34:05.676 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.4501ms
+2025-03-06 15:34:06.281 -05:00 [DBG] Connection id "0HNASTORPM3E1" received FIN.
+2025-03-06 15:34:06.283 -05:00 [DBG] Connection id "0HNASTORPM3E1" is closed. The last processed stream ID was 21.
+2025-03-06 15:34:06.284 -05:00 [DBG] The connection queue processing loop for 0HNASTORPM3E1 completed.
+2025-03-06 15:34:06.284 -05:00 [DBG] Connection id "0HNASTORPM3E1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-06 15:34:06.286 -05:00 [DBG] Connection id "0HNASTORPM3E1" stopped.
+2025-03-06 16:22:49.352 -05:00 [INF] Mapping CoreWCF branch app for path /UserService
+2025-03-06 16:22:49.404 -05:00 [INF] Configuring metadata to /UserService
